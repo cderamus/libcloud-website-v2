@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Apache Libcloud Python Library</title>
+  <subtitle>Standard Python library that abstracts away differences among multiple cloud provider APIs</subtitle>
+  <link href="https://libcloud.apache.org" rel="self" />
+  <link href="https://libcloud.apache.org" />
+  <id>https://libcloud.apache.org</id>
+  <updated>2013-12-14T22:25:01+01:00</updated>
+  <author>
+    <name>The Apache Software Foundation</name>
+  </author>
+
+    
+  <entry>
+    <title>Libcloud 0.14.0-beta3 released</title>
+    <link href="https://libcloud.apache.org/blog/2013/11/21/libcloud-0-14-0-beta3-is-released.html" />
+    <id>https://libcloud.apache.org/blog/2013/11/21/libcloud-0-14-0-beta3-is-released.html</id>
+    <updated>2013-11-21T00:00:00+01:00</updated>
+    <author>
+      <name>Tomaz Muraus</name>
+    </author>
+    <content type="html">&lt;p&gt;Libcloud 0.14.0-beta3 has been released. For more information, please refer to
+the &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-users/201311.mbox/%3CCAJMHEm%2B51RFT672GanfW9DKopcmDtZz2kkA7m0uufP1UupjeZw@mail.gmail.com%3E&quot;&gt;release announcement&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+    
+</feed>
