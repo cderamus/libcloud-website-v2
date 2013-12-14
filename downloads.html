@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apache Libcloud is a standard Python library that abstracts away differences among multiple cloud provider APIs">
+    <meta name="author" content="The Apache Software Foundation">
+
+    
+      <meta name="keywords" content="python,libcloud,cloud,cloud computing,openstack,amazon ec2" />
+      
+
+    
+      <title>Downloads | Apache Libcloud Python library</title>
+    
+
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
+
+    <link href='/assets/global-305ca444d13044e92f28c2727ce8e71c.css' rel='stylesheet' type='text/css' />
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="/images/libcloud_logo.png" /> Apache Libcloud</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/news.html">News</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="https://libcloud.readthedocs.org/en/latest/getting_started.html" target="_blank">Quick Start</a></li>
+            <li><a href="https://libcloud.readthedocs.org/en/latest/" target="_blank">Documentation</a></li>
+            <li><a href="/downloads.html">Downloads</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <div class="container">
+      <div class="row section">
+  <div class="col-lg-8 col-lg-offset-2">
+    <h1>Downloads</h1>
+
+<p>This page contains link to the latest stable release of Libcloud. If you are
+interested in an older release, please visit the <a href="http://www.apache.org/dist/libcloud/">archive page</a>.</p>
+
+<h2>Libcloud 0.13.2 - Released on September 18th, 2013</h2>
+
+<p>Files:</p>
+
+<ul>
+<li><a href="http://www.apache.org/dist/libcloud/apache-libcloud-0.13.2.tar.gz">apache-libcloud-0.13.2.tar.gz</a> [<a href="http://www.apache.org/dist/libcloud/apache-libcloud-0.13.2.tar.gz.asc">asc</a>] [<a href="http://www.apache.org/dist/libcloud/apache-libcloud-0.13.2.tar.gz.sha1">sha1</a>] [<a href="http://www.apache.org/dist/libcloud/apache-libcloud-0.13.2.tar.gz.md5">md5</a>]</li>
+<li><a href="http://www.apache.org/dist/libcloud/apache-libcloud-0.13.2.tar.bz2">apache-libcloud-0.13.2.tar.gz</a> [<a href="http://www.apache.org/dist/libcloud/apache-libcloud-0.13.2.tar.bz2.asc">asc</a>] [<a href="http://www.apache.org/dist/libcloud/apache-libcloud-0.13.2.tar.bz2.sha1">sha1</a>] [<a href="http://www.apache.org/dist/libcloud/apache-libcloud-0.13.2.tar.bz2.md5">md5</a>]</li>
+<li><a href="http://www.apache.org/dist/libcloud/apache-libcloud-0.13.2.zip">apache-libcloud-0.13.2.tar.gz</a> [<a href="http://www.apache.org/dist/libcloud/apache-libcloud-0.13.2.zip.asc">asc</a>] [<a href="http://www.apache.org/dist/libcloud/apache-libcloud-0.13.2.zip.sha1">sha1</a>] [<a href="http://www.apache.org/dist/libcloud/apache-libcloud-0.13.2.zip.md5">md5</a>]</li>
+</ul>
+
+<p>Upgrade notes: <a href="https://libcloud.readthedocs.org/en/latest/upgrade_notes.html">Click</a></p>
+
+<p>You are strongly encouraged to verify those packages using the <a href="http://www.apache.org/dist/libcloud/KEYS">Apache Libcloud
+developers KEYS</a>. You can find information on how to do that in the
+&quot;Quick package verification guide&quot; section bellow.</p>
+
+<h2>Distribution specific packages</h2>
+
+<p>Libcloud is also available in standard repositories of many popular Linux
+distributions.</p>
+
+<ul>
+<li>Ubuntu, Debian (apt) - <code>python-libcloud</code></li>
+<li>Fedora (yum) - <code>python-libcloud</code></li>
+<li>FreeBSD (ports) - <code>ports/net/py-libcloud</code></li>
+</ul>
+
+<p>Keep in mind that distribution packages may be out of date. If you want to make
+sure that you are using the latest version, you should install it by downloading
+the archive from this page or using pip.</p>
+
+<h2>Old releases</h2>
+
+<p>Old releases can be found in the archive at <a href="http://www.apache.org/dist/libcloud/">http://www.apache.org/dist/libcloud/</a>.</p>
+
+<h2>Quick package verification guide</h2>
+
+<p>This section contains quick instructions on how to validate the release PGP
+signatures.</p>
+
+<ol>
+<li>Download the <code>KEYS</code> file from the Apache website</li>
+</ol>
+
+<div class="highlight"><pre><code class="bash">wget http://www.apache.org/dist/libcloud/KEYS
+</code></pre></div>
+
+<p>It is very important to only download <code>KEYS</code> file from the Apache server which
+is mentioned above.</p>
+
+<p>2.. Import KEYS file</p>
+
+<div class="highlight"><pre><code class="bash">   gpg --import KEYS
+   gpg: key 42721F00: public key <span class="s2">&quot;Paul Querna &lt;...&gt;&quot;</span> imported
+   gpg: Total number processed: 1
+   gpg:               imported: 1
+   gpg: 3 marginal<span class="o">(</span>s<span class="o">)</span> needed, 1 <span class="nb">complete</span><span class="o">(</span>s<span class="o">)</span> needed, PGP trust model
+   gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+   gpg: next trustdb check due at 2011-10-30&lt;/pre&gt;
+   
+</code></pre></div>
+
+<p>2.. Verify package with <code>.asc</code> signature file</p>
+
+<div class="highlight"><pre><code class="bash">gpg --verify apache-libcloud-0.13.2.tar.bz2.asc
+gpg: Signature made Wed Oct  6 15:31:35 2010 CDT using DSA key ID 42721F00
+gpg: Good signature from <span class="s2">&quot;Paul Querna &lt;...&gt;&quot;</span>
+gpg:                 aka <span class="s2">&quot;Paul Querna &lt;...&gt;&quot;</span>
+gpg:                 ...&lt;/span&gt;
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 39F6 691A 0ECF 0C50 E8BB  849C F788 75F6 4272 1F00
+</code></pre></div>
+
+<p>Example of a bad signature:</p>
+
+<div class="highlight"><pre><code class="bash">gpg --verify apache-libcloud-0.13.2.tar.bz2.asc
+gpg: Signature made Wed Oct  6 15:31:35 2010 CDT using DSA key ID 42721F00
+gpg: BAD signature from <span class="s2">&quot;Paul Querna &amp;lt;...&amp;gt;&quot;</span>
+</code></pre></div>
+
+  </div>
+</div>
+
+
+      <hr />
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="footer-links">
+  <p><a href="http://www.apache.org/licenses/">License</a> | <a
+  href="/security.html">Security</a> | <a
+  href="http://www.apache.org/foundation/sponsorship.html">Sponsorship</a> |
+  <a href="http://www.apache.org/foundation/thanks.html">Thanks</a> |
+  <a href="/credits.html">Credits</a> | <a href="media.html">Media</a>
+  | <a href="/sitemap.html">Sitemap</a></p>
+</div>
+
+<div class="footer-text">
+  <p class="">Copyright &copy; 2009-2013 <a href="https://www.apache.org/" target="_blank">The Apache Software Foundation</a></p>
+  <p class="">Apache Libcloud, Libcloud, Apache, the Apache feather, and the Apache Libcloud project logo are trademarks of the Apache Software Foundation. All other marks mentioned may be trademarks or registered trademarks of their respective owners.</p>
+</div>
+
+          </div>
+        </div>
+      </footer>
+
+    </div><!-- /.container -->
+
+    <!-- JavaScript -->
+    <script src='/assets/global-81db474786253361681296514822377d.js' type='text/javascript'></script>
+
+  </body>
+</html>
