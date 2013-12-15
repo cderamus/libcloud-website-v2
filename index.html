@@ -23,7 +23,7 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 
-    <link href='/assets/global-67ba53cb0c3555cd4a12081f8feef494.css' rel='stylesheet' type='text/css' />
+    <link href='/assets/global-a3a031922fb22b5362bf8ad860547be9.css' rel='stylesheet' type='text/css' />
 
   </head>
 
@@ -37,7 +37,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><img src="/images/libcloud_logo.png" class="navbar-logo" /> Apache Libcloud</a>
+          <a class="navbar-brand" href="/index.html"><img src="/images/libcloud_logo.png" class="navbar-logo" /> Apache Libcloud</a>
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -59,72 +59,52 @@
   <div class="col-lg-12">
     <div class="main-content text-center">
       <h1>One Interface To Rule Them All</h1>
-      <h2 style="font-size: 1.5em;">Apache Libcloud is Python library that abstracts away differences among multiple cloud provider APIs. </h2>
+      <h2 class="tagline">Apache Libcloud is Python library that abstracts away differences among multiple cloud provider APIs. </h2>
 
-      <p>It supports more than 30 providers such as:</p>
+      <p>It supports more than 30 providers such as</p>
 
-      <p><a href="https://libcloud.readthedocs.org/en/latest/compute/drivers/ec2.html" target="_blank">
-        <img src="/images/provider_logos/aws.png" /></a>
-        <a href="https://libcloud.readthedocs.org/en/latest/compute/drivers/rackspace.html" target="_blank">
-        <img src="/images/provider_logos/rackspace.jpg" /></a>
-        <a href="https://libcloud.readthedocs.org/en/latest/compute/drivers/cloudstack.html" target="_blank"><img src="/images/provider_logos/cloudstack.png" /></a>
-         </p> and
-        <a href="https://libcloud.readthedocs.org/en/latest/supported_providers.html">
-          many others...</a>
+      <div class="provider-logos">
+        <p><a href="https://libcloud.readthedocs.org/en/latest/compute/drivers/ec2.html" target="_blank">
+          <img src="/images/provider_logos/aws.png" /></a>
+          <a href="https://libcloud.readthedocs.org/en/latest/compute/drivers/rackspace.html" target="_blank">
+          <img src="/images/provider_logos/rackspace.jpg" /></a>
+        <a href="https://libcloud.readthedocs.org/en/latest/compute/drivers/cloudstack.html" target="_blank">
+          <img src="/images/provider_logos/cloudstack.png" /></a>
+        </p>
+        </div>
+        <p>and <a href="https://libcloud.readthedocs.org/en/latest/supported_providers.html" target="_blank">many others...</a>
     </div>
 
-    <div style="margin-top: 20px;">
-      <div class="row section">
-        <div class="col-md-4">
-          <h3>Features</h3>
-          <ul>
-            <li>Avoid vendor lock-in</li>
-            <li>Use the same API to talk to many different providers</li>
-            <li>More than <a href="https://libcloud.readthedocs.org/en/latest/supported_providers.html">
-            30 supported providers</a> total</li>
-            <li>Four main APIs:
-            <a href="https://libcloud.readthedocs.org/en/latest/compute/index.html">Compute</a>,
-            <a href="https://libcloud.readthedocs.org/en/latest/storage/index.html">Storage</a>,
-            <a href="https://libcloud.readthedocs.org/en/latest/loadbalancer/index.html">Load Balancers</a>,
-            <a href="https://libcloud.readthedocs.org/en/latest/dns/index.html">DNS</a></li>
-            <li>Supports <a href="/about.html#supported-python-versions">Python 2.5, Python 2.6, Python 2.7, PyPy
-              and Python 3</a></li>
-          </ul>
-        </div>
+    <div class="row section row-2">
+      <div class="col-md-8">
+        <h3>Installation</h3>
+        <p>Latest stable version: <a href="https://crate.io/packages/apache-libcloud/" target="_blank">0.13.2</a></p>
+        <p><code>pip install apache-libcloud</code></p>
+        <p>Or <a href="downloads.html">download it from our servers</a> and install it manually.</p>
+      </div>
 
-        <div class="col-md-4">
-          <h3>Installation</h3>
-          <p>Latest stable version: <a href="https://crate.io/packages/apache-libcloud/" target="_blank">0.13.2</a></p>
-          <p><code>pip install apache-libcloud</code></p>
-          <p>Or <a href="downloads.html">download and install it</a> manually from our servers.</p>
-
-          <h3>Latest Blog Post</h3>
+      <div class="col-md-4">
+        <h3>Latest Blog Posts</h3>
+        
           
-          <p><a href="/blog/2013/11/21/libcloud-0-14-0-beta3-released.html">Libcloud 0.14.0-beta3 released</a>
-        </div>
-
-        <div class="col-md-4">
-          <h3>Get in Touch, Follow Us</h3>
-          <ul>
-            <li><a href="mailto:users-subscribe@libcloud.apache.org">users@libcloud.apache.org</a></li>
-            <li><a href="http://webchat.freenode.net?channels=libcloud&uio=d4">#libcloud on Freenode</a></li>
-          </ul>
-
-          <ul>
-            <li><a href="https://github.com/apache/libcloud" target="_blank">Libcloud on Github</a></li>
-            <li><a href="https://plus.google.com/100590055818889164025" rel="publisher" target="_blank">Apache Libcloud on Google+</a></li>
-            <li><a href="https://twitter.com/libcloud" target="_blank">libcloud on Twitter</a></li>
-            <li><a href="https://www.ohloh.net/p/libcloud/" target="_blank">libcloud on Ohloh</a></li>
-          </ul>
-        </div>
+            <p><a href="/blog/2013/11/21/libcloud-0-14-0-beta3-released.html">Libcloud 0.14.0-beta3 released</a>
+          
+        
+          
+            <p><a href="/blog/2013/09/05/libcloud-0-13-1-released.html">Libcloud 0.13.1 released</a>
+          
+        
+          
+            <p><a href="/blog/2013/08/04/new-committer-john-carr-joins-our-team.html">New committer John Carr joins our team</a>
+          
+        
       </div>
     </div>
 
-    <div>
-      <div class="row section">
-        <div class="col-md-6">
-          <h3>Example 1 - Create a node</h3>
-          <div class="highlight"><pre><code class="python"><span class="kn">from</span> <span class="nn">libcloud.compute.types</span> <span class="kn">import</span> <span class="n">Provider</span>
+    <div class="row section row-3">
+      <div class="col-md-6">
+        <h3>Compute Example - Create a node</h3>
+        <div class="highlight"><pre><code class="python"><span class="kn">from</span> <span class="nn">libcloud.compute.types</span> <span class="kn">import</span> <span class="n">Provider</span>
 <span class="kn">from</span> <span class="nn">libcloud.compute.providers</span> <span class="kn">import</span> <span class="n">get_driver</span>
 
 <span class="n">cls</span> <span class="o">=</span> <span class="n">get_driver</span><span class="p">(</span><span class="n">Provider</span><span class="o">.</span><span class="n">RACKSPACE</span><span class="p">)</span>
@@ -139,12 +119,12 @@
 <span class="n">node</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">&#39;libcloud&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">size</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="n">image</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
 </code></pre></div>
-          <p>For more compute examples, see <a href="https://libcloud.readthedocs.org/en/latest/compute/examples.html">documentation</a>.</p>
-        </div>
+        <p>For more compute examples, see <a href="https://libcloud.readthedocs.org/en/latest/compute/examples.html">documentation</a>.</p>
+      </div>
 
-        <div class="col-md-6">
-          <h3>Example 2 - Create DNS record</h3>
-<div class="highlight"><pre><code class="python"><span class="kn">from</span> <span class="nn">libcloud.dns.types</span> <span class="kn">import</span> <span class="n">Provider</span><span class="p">,</span> <span class="n">RecordType</span>
+      <div class="col-md-6">
+        <h3>DNS Example - Create a DNS record</h3>
+        <div class="highlight"><pre><code class="python"><span class="kn">from</span> <span class="nn">libcloud.dns.types</span> <span class="kn">import</span> <span class="n">Provider</span><span class="p">,</span> <span class="n">RecordType</span>
 <span class="kn">from</span> <span class="nn">libcloud.dns.providers</span> <span class="kn">import</span> <span class="n">get_driver</span>
 
 <span class="n">cls</span> <span class="o">=</span> <span class="n">get_driver</span><span class="p">(</span><span class="n">Provider</span><span class="o">.</span><span class="n">ZERIGO</span><span class="p">)</span>
@@ -156,8 +136,45 @@
 <span class="n">record</span> <span class="o">=</span> <span class="n">zone</span><span class="o">.</span><span class="n">create_record</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">&#39;www&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">RecordType</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="s">&#39;127.0.0.1&#39;</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
 </code></pre></div>
-        <p>For more DNS examples, see <a href="https://libcloud.readthedocs.org/en/latest/dns/examples.html">documentation</a>.</p>
-        </div>
+      <p>For more DNS examples, see <a href="https://libcloud.readthedocs.org/en/latest/dns/examples.html">documentation</a>.</p>
+      </div>
+    </div>
+
+    <div class="row section row-4">
+      <div class="col-md-4">
+        <h3>Features</h3>
+        <ul>
+          <li>Avoid vendor lock-in</li>
+          <li>Use the same API to talk to many different providers</li>
+          <li>More than <a href="https://libcloud.readthedocs.org/en/latest/supported_providers.html">
+          30 supported providers</a> total</li>
+          <li>Four main APIs:
+          <a href="https://libcloud.readthedocs.org/en/latest/compute/index.html">Compute</a>,
+          <a href="https://libcloud.readthedocs.org/en/latest/storage/index.html">Storage</a>,
+          <a href="https://libcloud.readthedocs.org/en/latest/loadbalancer/index.html">Load Balancers</a>,
+          <a href="https://libcloud.readthedocs.org/en/latest/dns/index.html">DNS</a></li>
+          <li>Supports <a href="/about.html#supported-python-versions">Python 2.5, Python 2.6, Python 2.7, PyPy
+            and Python 3</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Need Help?</h3>
+
+        <ul>
+          <li><a href="mailto:users-subscribe@libcloud.apache.org">users@libcloud.apache.org</a></li>
+          <li><a href="http://webchat.freenode.net?channels=libcloud&uio=d4">#libcloud on Freenode</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Get in Touch, Follow Us</h3>
+        <ul>
+          <li><a href="https://github.com/apache/libcloud" target="_blank">Libcloud on Github</a></li>
+          <li><a href="https://plus.google.com/100590055818889164025" rel="publisher" target="_blank">Apache Libcloud on Google+</a></li>
+          <li><a href="https://twitter.com/libcloud" target="_blank">libcloud on Twitter</a></li>
+          <li><a href="https://www.ohloh.net/p/libcloud/" target="_blank">libcloud on Ohloh</a></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -189,7 +206,7 @@
     </div><!-- /.container -->
 
     <!-- JavaScript -->
-    <script src='/assets/global-6fee24b146f51538fa9b5183af80d620.js' type='text/javascript'></script>
+    <script src='/assets/global-dabf4e3c23a5c89be3f193117f95f9ac.js' type='text/javascript'></script>
 
 
     <script type="text/javascript">
