@@ -15,6 +15,8 @@
       <title>Archive: 2011 &raquo; July | Apache Libcloud Python library</title>
     
 
+    <link href="/blog/atom.xml" type="application/atom+xml" rel="alternate" title="Apache Libcloud Blog Feed" />
+
     <!-- fav icons -->
     <link rel="shortcut icon" href="/images/favicon.png" />
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
@@ -23,7 +25,7 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 
-    <link href='/assets/global-9e13d08075d5a5f8fc5f67cd2f0d8a5b.css' rel='stylesheet' type='text/css' />
+    <link href='/assets/global-d7453767f09c778e8f414aa1a249ba53.css' rel='stylesheet' type='text/css' />
 
   </head>
 
@@ -56,20 +58,75 @@
 
     <div class="container main-container">
       
+
   <div class="post">
-  <h2><a href="/blog/2011/07/04/libcloud-0-5-2-released.html">Libcloud 0.5.2 released</a></h2>
+  
+    <h2><a href="/blog/2011/07/04/libcloud-0-5-2-released.html">Libcloud 0.5.2 released</a></h2>
+  
 
-  <p>Libcloud 0.5.2 has been released. For more information, please refer to
-the <a href="http://mail-archives.apache.org/mod_mbox/libcloud-dev/201107.mbox/%3CCAJMHEm+-=3NxsZj+n+bogmYzGsxDJQOU_2aJbuNS77nmnsekJw@mail.gmail.com%3E">release announcement</a>.</p>
+  
+    
+  
+  <span class="post-date-author">By Tomaz Muraus <span style="display:none">(<a href="https://plus.google.com/+TomazMuraus?rel=author">Google+</a>)</span>on Jul 04, 2011</span>
 
-<p>[1]: /blog/archives/2011/07/index.html</p>
+  <div class="post-content">
+    <p>Hello all,</p>
 
+<p>I would like to announce Libcloud 0.5.2. This release primary fixes two bugs
+which were introduced in Libcloud 0.5.0 and improves listing of the objects
+in the containers which contain more objects that fit into a single
+response.</p>
+
+<h3>Notable changes, bug-fixes and improvements</h3>
+
+<p><strong>Compute</strong></p>
+
+<ul>
+<li>Fix a regression in the <code>deploy_node()</code> method and make it more robust</li>
+<li>Fix a regression in the Nimbus driver create_node() method</li>
+<li>Improved node name and tag handling in the Amazon EC2 driver</li>
+<li>Improved pricing and response handling in the OpenStack driver</li>
+<li>New driver for SkaliCloud (skalicloud.com)</li>
+<li>New driver for ServerLove (serverlove.com)</li>
+</ul>
+
+<p><strong>Storage</strong></p>
+
+<ul>
+<li>Fix handling of the containers with a lot of objects. Now an iterator
+object is returned when user calls <code>list_container_objects()</code> method
+and this object transparently handles pagination.</li>
+</ul>
+
+<p>For a full list of changes, please check the CHANGES file &lt;
+https://github.com/apache/libcloud/blob/0.5.2/CHANGES&gt;.</p>
+
+<h3>Download</h3>
+
+<p>Libcloud 0.5.2 can be downloaded from
+http://libcloud.apache.org/downloads.html or installed using pip - pip
+install apache-libcloud</p>
+
+<p>It is possible that the file hasn&#39;t been synced to all the mirrors yet so if
+this is the case, please use the apache mirror -
+http://www.apache.org/dist/libcloud</p>
+
+<h3>Documentation*</h3>
+
+<p>API documentation can be found at https://libcloud.apache.org/apidocs/0.5.2/</p>
+
+<h3>Bugs / Issues</h3>
+
+<p>If you find any bug or issue, please report it on our issue tracker &lt;
+https://issues.apache.org/jira/browse/LIBCLOUD&gt;. Don&#39;t forget to attach an
+example and / or test which reproduces your problem.</p>
+
+<p>Source: <a href="http://mail-archives.apache.org/mod_mbox/libcloud-dev/201107.mbox/%3CCAJMHEm+-=3NxsZj+n+bogmYzGsxDJQOU_2aJbuNS77nmnsekJw@mail.gmail.com%3E">release announcement</a>.</p>
+
+  </div>
 
   <div class="row section post-meta">
-    <div class="col-md-6">
-      <p>Posted by <strong>Tomaz Muraus</strong> on July 04, 2011</p>
-    </div>
-    <div class="col-md-6 post-tags">
+    <div class="col-md-12 post-tags">
       <p>Tags: <a href="/tags/news.html" rel="tag">news</a>, <a href="/tags/release%20announcement.html" rel="tag">release announcement</a></p>
     </div>
   </div>
@@ -109,7 +166,7 @@ the <a href="http://mail-archives.apache.org/mod_mbox/libcloud-dev/201107.mbox/%
     </div><!-- /.container -->
 
     <!-- JavaScript -->
-    <script src='/assets/global-6dc953bcc7b20ec736ceee8ab70ca677.js' type='text/javascript'></script>
+    <script src='/assets/global-736c88c2fd20e0eabbae6c2de8ef9e8c.js' type='text/javascript'></script>
 
 
     <script type="text/javascript">

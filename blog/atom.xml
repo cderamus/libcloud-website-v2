@@ -5,7 +5,7 @@
   <link href="https://libcloud.apache.org" rel="self" />
   <link href="https://libcloud.apache.org" />
   <id>https://libcloud.apache.org</id>
-  <updated>2013-12-15T14:56:18+01:00</updated>
+  <updated>2013-12-19T23:58:30+01:00</updated>
   <author>
     <name>The Apache Software Foundation</name>
   </author>
@@ -19,8 +19,101 @@
     <author>
       <name>Tomaz Muraus</name>
     </author>
-    <content type="html">&lt;p&gt;Libcloud 0.14.0-beta3 has been released. For more information, please refer to
-the &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-users/201311.mbox/%3CCAJMHEm%2B51RFT672GanfW9DKopcmDtZz2kkA7m0uufP1UupjeZw@mail.gmail.com%3E&quot;&gt;release announcement&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;We are pleased to announce the release of Libcloud 0.14.0-beta3, a first
+(beta) release in the 0.14.0 series.&lt;/p&gt;
+
+&lt;p&gt;The reason this is a beta and not a final release is that it includes some
+pretty big changes (most notably the &amp;quot;region&amp;quot; argument change). I would
+like those changes to get some more real-life testing before doing a final
+release.&lt;/p&gt;
+
+&lt;p&gt;Being a first release in the 0.14.0 series means it brings many (and I mean
+many!) new features, changes and improvements.&lt;/p&gt;
+
+&lt;h3&gt;Release highlights&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;To make working with providers which support multiple regions easier and
+more user-friendly, some of the drivers have moved away from the &amp;quot;one
+class per region&amp;quot; to a single class plus &amp;quot;region&amp;quot; argument model. Those
+drivers include: EC2, Rackspace, ElasticHosts, Joyent, CloudFiles.&lt;/li&gt;
+&lt;li&gt;Addition of a programmatic way of updating the pricing file and ability
+to use a custom pricing file. For more information, please see the
+&lt;a href=&quot;https://libcloud.readthedocs.org/en/latest/compute/pricing.html#using-a-custom-pricing-file&quot;&gt;documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Addition of block storage management methods to the following drivers:
+OpenNebula, OpenStack, EC2&lt;/li&gt;
+&lt;li&gt;Unification of the extension arguments for handling security groups in
+the EC2 and OpenStack driver&lt;/li&gt;
+&lt;li&gt;Many new features and improvements in the CloudStack driver&lt;/li&gt;
+&lt;li&gt;New compute and loadbalancer driver for Google Compute Engine (GCE)&lt;/li&gt;
+&lt;li&gt;Ability to export Libcloud&amp;#39;s DNS zone to BIND zone format&lt;/li&gt;
+&lt;li&gt;and much more!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some of the changes noted above are also backward incompatible. For more
+information on what has changed and how to update your code to work with
+a new release, please visit the &lt;a href=&quot;https://libcloud.readthedocs.org/en/latest/upgrade_notes.html#libcloud-0-14-0&quot;&gt;Upgrade Notes&lt;/a&gt; section in our
+documentation.&lt;/p&gt;
+
+&lt;h3&gt;Other non-code changes worth a mention&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tests now also run on travis-ci - &lt;a href=&quot;https://travis-ci.org/apache/libcloud&quot;&gt;https://travis-ci.org/apache/libcloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New documentation is now also available on RTD -
+&lt;a href=&quot;https://libcloud.readthedocs.org/en/latest/&quot;&gt;https://libcloud.readthedocs.org/en/latest/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Full change log can be found &lt;a href=&quot;https://git-wip-us.apache.org/repos/asf?p=libcloud.git;a=blob;f=CHANGES;h=1a8d9e2072d4b49b5718b19f534573f9dfb224e4;hb=5ef0707b2a34f0e8520fe029e7313b7c57f15919#l3&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;Libcloud 0.14.0-beta3 can be downloaded from
+http://libcloud.apache.org/downloads.html
+or installed using pip:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;pip install apache-libcloud&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.14.0-beta3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;It is possible that the file hasn&amp;#39;t been synced to all the mirrors yet. If
+this
+is the case, please use the main Apache mirror -
+http://www.apache.org/dist/libcloud.&lt;/p&gt;
+
+&lt;h3&gt;Upgrading&lt;/h3&gt;
+
+&lt;p&gt;If you have installed Libcloud using pip you can also use it to upgrade it:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;pip install --upgrade apache-libcloud&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.14.0-beta3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Upgrade notes&lt;/h3&gt;
+
+&lt;p&gt;A page which describes backward incompatible or semi-incompatible
+changes and how to preserve the old behavior when this is possible
+can be found at
+https://libcloud.readthedocs.org/en/latest/upgrade_notes.html#libcloud-0-14-0
+.&lt;/p&gt;
+
+&lt;h3&gt;Documentation&lt;/h3&gt;
+
+&lt;p&gt;Regular and API documentation is available at
+https://libcloud.readthedocs.org/en/latest/.&lt;/p&gt;
+
+&lt;h3&gt;Bugs / Issues&lt;/h3&gt;
+
+&lt;p&gt;If you find any bug or issue, please report it on our issue tracker
+&lt;a href=&quot;https://issues.apache.org/jira/browse/LIBCLOUD&quot;&gt;https://issues.apache.org/jira/browse/LIBCLOUD&lt;/a&gt;.
+Don&amp;#39;t forget to attach an example and / or test which reproduces your
+problem.&lt;/p&gt;
+
+&lt;h2&gt;Thanks&lt;/h2&gt;
+
+&lt;p&gt;Thanks to everyone who contributed and made this release possible!&lt;/p&gt;
+
+&lt;p&gt;Full list of people who contributed to this release can be found in the
+&lt;a href=&quot;https://git-wip-us.apache.org/repos/asf?p=libcloud.git;a=blob;f=CHANGES;h=1a8d9e2072d4b49b5718b19f534573f9dfb224e4;hb=5ef0707b2a34f0e8520fe029e7313b7c57f15919#l3&quot;&gt;CHANGES file&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-users/201311.mbox/%3CCAJMHEm%2B51RFT672GanfW9DKopcmDtZz2kkA7m0uufP1UupjeZw@mail.gmail.com%3E&quot;&gt;release announcement&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
     
@@ -32,8 +125,67 @@ the &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-users/201
     <author>
       <name>Tomaz Muraus</name>
     </author>
-    <content type="html">&lt;p&gt;Libcloud 0.13.1 been released. For more information, please refer to
-the &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-users/201309.mbox/%3CCAJMHEmL4-Xuysx13z1EDwq-1K95eDyANqgY2tYGUT-MB5Sz4bQ%40mail.gmail.com%3E&quot;&gt;release announcement&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;We are pleased to announce the release of Libcloud 0.13.1!&lt;/p&gt;
+
+&lt;p&gt;This is a bug-fix only release. Among some smaller bugs it also fixes
+Content-Length regression which broke create and update operations in
+the Bluebox Compute and Azure Storage driver (LIBCLOUD-362, LIBCLOUD-3901).&lt;/p&gt;
+
+&lt;p&gt;Full change log can be found at &lt;a href=&quot;https://git-wip-us.apache.org/repos/asf?p=libcloud.git;a=blob;f=CHANGES;h=ca90c84e296ca82e2206eb86ed7364c588aad503;hb=602b6a7a27dca6990a38eb887e1d6615826387d5&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;Libcloud 0.13.0 can be downloaded from
+http://libcloud.apache.org/downloads.html
+or installed using pip:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;pip install apache-libcloud
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;It is possible that the file hasn&amp;#39;t been synced to all the mirrors yet. If
+this
+is the case, please use the main Apache mirror -
+http://www.apache.org/dist/libcloud.&lt;/p&gt;
+
+&lt;h3&gt;Upgrading&lt;/h3&gt;
+
+&lt;p&gt;If you have installed Libcloud using pip you can also use it to upgrade it:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;pip install --upgrade apache-libcloud
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Upgrade notes&lt;/h3&gt;
+
+&lt;p&gt;A page which describes backward incompatible or semi-incompatible
+changes and how to preserve the old behavior when this is possible
+can be found at http://libcloud.apache.org/upgrade-notes.html.&lt;/p&gt;
+
+&lt;h3&gt;Documentation&lt;/h3&gt;
+
+&lt;p&gt;API documentation can be found at http://libcloud.apache.org/apidocs/0.13.1/
+.&lt;/p&gt;
+
+&lt;p&gt;We also have a new Sphinx documentation which can be found at
+https://libcloud.apache.org/docs/.
+Keep in mind though, that this documentation reflects state in trunk which
+includes some backward incompatible changes which aren&amp;#39;t present in 0.13.1.
+All the examples in the documentation which only work with trunk are
+clearly marked with a note.&lt;/p&gt;
+
+&lt;h3&gt;Bugs / Issues&lt;/h3&gt;
+
+&lt;p&gt;If you find any bug or issue, please report it on our issue tracker
+&lt;a href=&quot;https://issues.apache.org/jira/browse/LIBCLOUD&quot;&gt;https://issues.apache.org/jira/browse/LIBCLOUD&lt;/a&gt;.
+Don&amp;#39;t forget to attach an example and / or test which reproduces your
+problem.&lt;/p&gt;
+
+&lt;h3&gt;Thanks&lt;/h3&gt;
+
+&lt;p&gt;Thanks to everyone who contributed and made this release possible! Full
+list of
+people who contributed to this release can be found in the &lt;a href=&quot;https://git-wip-us.apache.org/repos/asf?p=libcloud.git;a=blob;f=CHANGES;h=ca90c84e296ca82e2206eb86ed7364c588aad503;hb=602b6a7a27dca6990a38eb887e1d6615826387d5&quot;&gt;CHANGES file&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-users/201309.mbox/%3CCAJMHEmL4-Xuysx13z1EDwq-1K95eDyANqgY2tYGUT-MB5Sz4bQ%40mail.gmail.com%3E&quot;&gt;release announcement&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
     
@@ -45,8 +197,14 @@ the &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-users/201
     <author>
       <name>Tomaz Muraus</name>
     </author>
-    <content type="html">&lt;p&gt;John Carr (johnmdcarr) has joined our team as a committer and PMC member. For
-more information, please refer to the &lt;a href=&quot;https://mail-archives.apache.org/mod_mbox/libcloud-dev/201308.mbox/%3CCAJMHEm%2Bh7Fbqc8vWBw0PJbkzUKaDHWVziezOgECa2n7qESvLeA%40mail.gmail.com%3E&quot;&gt;mailing list thread&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;The Project Management Committee (PMC) for Apache Libcloud has asked John
+Carr to become a committer and we are pleased to announce that they have
+accepted.&lt;/p&gt;
+
+&lt;p&gt;We are glad to have him as a committer and a PMC member. Everyone, please
+help me welcome him to the team :)&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;https://mail-archives.apache.org/mod_mbox/libcloud-dev/201308.mbox/%3CCAJMHEm%2Bh7Fbqc8vWBw0PJbkzUKaDHWVziezOgECa2n7qESvLeA%40mail.gmail.com%3E&quot;&gt;mailing list thread&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
     
@@ -58,8 +216,57 @@ more information, please refer to the &lt;a href=&quot;https://mail-archives.apa
     <author>
       <name>Tomaz Muraus</name>
     </author>
-    <content type="html">&lt;p&gt;Libcloud 0.13.0 been released. For more information, please refer to
-the &lt;a href=&quot;https://mail-archives.apache.org/mod_mbox/libcloud-dev/201307.mbox/%3CCAJMHEmJBU_aMREM0f0LD-nHZt6pWTt9WabfdxDPtDSy%2B1w7K8g%40mail.gmail.com%3E&quot;&gt;release announcement&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;We are pleased to announce the release of Libcloud 0.13.0!&lt;/p&gt;
+
+&lt;p&gt;This release includes a lot of improvements and bug fixes.&lt;/p&gt;
+
+&lt;p&gt;Full change log can be found at &lt;a href=&quot;https://git-wip-us.apache.org/repos/asf?p=libcloud.git;a=blob;f=CHANGES;h=640bd2f4db8bc11674fc8c1829922d0c79b733cd;hb=9c0d11a4cf7e588ad87c7e57311bbb1d955cc2a7&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;Libcloud 0.13.0 can be downloaded from
+http://libcloud.apache.org/downloads.html
+or installed using pip:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;pip install apache-libcloud
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;It is possible that the file hasn&amp;#39;t been synced to all the mirrors yet. If
+this
+is the case, please use the main Apache mirror -
+http://www.apache.org/dist/libcloud.&lt;/p&gt;
+
+&lt;h3&gt;Upgrading&lt;/h3&gt;
+
+&lt;p&gt;If you have installed Libcloud using pip you can also use it to upgrade it:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;pip install --upgrade apache-libcloud
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Upgrade notes&lt;/h3&gt;
+
+&lt;p&gt;A page which describes backward incompatible or semi-incompatible
+changes and how to preserve the old behavior when this is possible
+can be found at http://libcloud.apache.org/upgrade-notes.html.&lt;/p&gt;
+
+&lt;h3&gt;Documentation&lt;/h3&gt;
+
+&lt;p&gt;API documentation can be found at http://libcloud.apache.org/apidocs/0.13.0/.&lt;/p&gt;
+
+&lt;h3&gt;Bugs / Issues&lt;/h3&gt;
+
+&lt;p&gt;If you find any bug or issue, please report it on our issue tracker
+&lt;a href=&quot;https://issues.apache.org/jira/browse/LIBCLOUD&quot;&gt;https://issues.apache.org/jira/browse/LIBCLOUD&lt;/a&gt;.
+Don&amp;#39;t forget to attach an example and / or test which reproduces your
+problem.&lt;/p&gt;
+
+&lt;h3&gt;Thanks&lt;/h3&gt;
+
+&lt;p&gt;Thanks to everyone who contributed and made this release possible! Full
+list of
+people who contributed to this release can be found in the &lt;a href=&quot;https://git-wip-us.apache.org/repos/asf?p=libcloud.git;a=blob;f=CHANGES;h=640bd2f4db8bc11674fc8c1829922d0c79b733cd;hb=9c0d11a4cf7e588ad87c7e57311bbb1d955cc2a7&quot;&gt;CHANGES file&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;https://mail-archives.apache.org/mod_mbox/libcloud-dev/201307.mbox/%3CCAJMHEmJBU_aMREM0f0LD-nHZt6pWTt9WabfdxDPtDSy%2B1w7K8g%40mail.gmail.com%3E&quot;&gt;release announcement&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
     
@@ -71,8 +278,61 @@ the &lt;a href=&quot;https://mail-archives.apache.org/mod_mbox/libcloud-dev/2013
     <author>
       <name>Tomaz Muraus</name>
     </author>
-    <content type="html">&lt;p&gt;Libcloud 0.13.1 been released. For more information, please refer to
-the &lt;a href=&quot;https://mail-archives.apache.org/mod_mbox/libcloud-dev/201303.mbox/%3CCAJMHEmJDKsYOn%3DaVDyChdQCgHbKc1r2n0Wy4_UxGmdd-aXf-WQ%40mail.gmail.com%3E&quot;&gt;release announcement&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;We are pleased to announce the release of Libcloud 0.12.3!&lt;/p&gt;
+
+&lt;p&gt;This release is primarily a bug fix release and fixes Python 3.3,
+deployment and some other issues.&lt;/p&gt;
+
+&lt;p&gt;Full change log can be found at
+https://svn.apache.org/repos/asf/libcloud/tags/0.12.3/CHANGES&lt;/p&gt;
+
+&lt;h3&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;Libcloud 0.12.3 can be downloaded from
+http://libcloud.apache.org/downloads.html
+or installed using pip:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;pip install apache-libcloud
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;It is possible that the file hasn&amp;#39;t been synced to all the mirrors yet. If
+this
+is the case, please use the main Apache mirror -
+http://www.apache.org/dist/libcloud.&lt;/p&gt;
+
+&lt;h3&gt;Upgrading&lt;/h3&gt;
+
+&lt;p&gt;If you have installed Libcloud using pip you can also use it to upgrade it:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;pip install --upgrade apache-libcloud
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Upgrade notes&lt;/h3&gt;
+
+&lt;p&gt;A page which describes backward incompatible or semi-incompatible
+changes and how to preserve the old behavior when this is possible
+can be found at http://libcloud.apache.org/upgrade-notes.html.&lt;/p&gt;
+
+&lt;h3&gt;Documentation&lt;/h3&gt;
+
+&lt;p&gt;API documentation can be found at http://libcloud.apache.org/apidocs/0.12.3/
+.&lt;/p&gt;
+
+&lt;h3&gt;Bugs / Issues&lt;/h3&gt;
+
+&lt;p&gt;If you find any bug or issue, please report it on our issue tracker
+&lt;a href=&quot;https://issues.apache.org/jira/browse/LIBCLOUD&quot;&gt;https://issues.apache.org/jira/browse/LIBCLOUD&lt;/a&gt;.
+ Don&amp;#39;t forget to attach an example and / or test which reproduces your
+problem.&lt;/p&gt;
+
+&lt;h3&gt;Thanks&lt;/h3&gt;
+
+&lt;p&gt;Thanks to everyone who contributed and made this release possible! Full
+list of
+people who contributed to this release can be found in the CHANGES file
+&lt;a href=&quot;https://svn.apache.org/repos/asf/libcloud/tags/0.12.3/CHANGES&quot;&gt;https://svn.apache.org/repos/asf/libcloud/tags/0.12.3/CHANGES&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;https://mail-archives.apache.org/mod_mbox/libcloud-dev/201303.mbox/%3CCAJMHEmJDKsYOn%3DaVDyChdQCgHbKc1r2n0Wy4_UxGmdd-aXf-WQ%40mail.gmail.com%3E&quot;&gt;release announcement&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
     
@@ -84,8 +344,82 @@ the &lt;a href=&quot;https://mail-archives.apache.org/mod_mbox/libcloud-dev/2013
     <author>
       <name>Tomaz Muraus</name>
     </author>
-    <content type="html">&lt;p&gt;Libcloud 0.12.1 been released. For more information, please refer to
-the &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-users/201302.mbox/%3CCAJMHEmLc0RfSxM9UhXPeTwKiNDbZPsQs6SJMA1o3y1D4Cv+reA@mail.gmail.com%3E&quot;&gt;release announcement&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;We are pleased to announce the release of Libcloud 0.12.1!&lt;/p&gt;
+
+&lt;p&gt;This release includes many new features, improvements and bug-fixes.&lt;/p&gt;
+
+&lt;h3&gt;Release highlights&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;New more efficient generator based approach for iterating over paginated
+collections.&lt;/li&gt;
+&lt;li&gt;New generator based method for iterating over containers
+(iterate_containers).&lt;/li&gt;
+&lt;li&gt;Old ENUM style provided constants have been replaced with a string
+version. This allows users to dynamically register new providers using new
+set_driver method.&lt;/li&gt;
+&lt;li&gt;Support for multipart uploads in the Amazon S3 storage driver.&lt;/li&gt;
+&lt;li&gt;New load balancer driver for Amazon Load Balancing (ELB) service.&lt;/li&gt;
+&lt;li&gt;New storage driver for Azure Blog storage&lt;/li&gt;
+&lt;li&gt;New &amp;quot;local storage&amp;quot; storage driver&lt;/li&gt;
+&lt;li&gt;Support for multipart uploads in the S3 driver&lt;/li&gt;
+&lt;li&gt;Allow user to specify which CA cert is used for verifying server SSL
+certificate by setting &amp;quot;SSL&lt;em&gt;CERT&lt;/em&gt;FILE&amp;quot; environment variable&lt;/li&gt;
+&lt;li&gt;Drivers which use xmlrplic library now use Libcloud HTTP layer for making
+HTTP requests. This means those drivers now support LIBCLOUD_DEBUG and SSL
+cert validation functionality&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Full change log can be found at
+https://svn.apache.org/repos/asf/libcloud/tags/0.12.1/CHANGES&lt;/p&gt;
+
+&lt;h3&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;Libcloud 0.12.1 can be downloaded from
+http://libcloud.apache.org/downloads.html
+or installed using pip:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;pip install apache-libcloud
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;It is possible that the file hasn&amp;#39;t been synced to all the mirrors yet. If
+this
+is the case, please use the main Apache mirror -
+http://www.apache.org/dist/libcloud.&lt;/p&gt;
+
+&lt;h3&gt;Upgrading&lt;/h3&gt;
+
+&lt;p&gt;If you have installed Libcloud using pip you can also use it to upgrade it:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;pip install --upgrade apache-libcloud
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Upgrade notes&lt;/h3&gt;
+
+&lt;p&gt;A page which describes backward incompatible or semi-incompatible
+changes and how to preserve the old behavior when this is possible
+can be found at http://libcloud.apache.org/upgrade-notes.html.&lt;/p&gt;
+
+&lt;h3&gt;Documentation&lt;/h3&gt;
+
+&lt;p&gt;API documentation can be found at http://libcloud.apache.org/apidocs/0.12.1/
+.&lt;/p&gt;
+
+&lt;h3&gt;Bugs / Issues&lt;/h3&gt;
+
+&lt;p&gt;If you find any bug or issue, please report it on our issue tracker
+&lt;a href=&quot;https://issues.apache.org/jira/browse/LIBCLOUD&quot;&gt;https://issues.apache.org/jira/browse/LIBCLOUD&lt;/a&gt;.
+Don&amp;#39;t forget to attach an example and / or test which reproduces your
+problem.&lt;/p&gt;
+
+&lt;h3&gt;Thanks&lt;/h3&gt;
+
+&lt;p&gt;Thanks to everyone who contributed and made this release possible! Full
+list of
+people who contributed to this release can be found in the CHANGES file
+&lt;a href=&quot;https://svn.apache.org/repos/asf/libcloud/tags/0.12.1/CHANGES&quot;&gt;https://svn.apache.org/repos/asf/libcloud/tags/0.12.1/CHANGES&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-users/201302.mbox/%3CCAJMHEmLc0RfSxM9UhXPeTwKiNDbZPsQs6SJMA1o3y1D4Cv+reA@mail.gmail.com%3E&quot;&gt;release announcement&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
     
@@ -97,8 +431,21 @@ the &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-users/201
     <author>
       <name>Tomaz Muraus</name>
     </author>
-    <content type="html">&lt;p&gt;Mahendra Maheshwara (mahendram) has joined our team as a committer. For more
-information, please refer to the &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-dev/201212.mbox/%3CCAJMHEmLyVg66Kb1Q9LRD1z9bSbtVFU=hTZGeWO2pc+s4qcEpow@mail.gmail.com%3E&quot;&gt;mailing list thread&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;The Project Management Committee (PMC) for Apache Libcloud has asked
+Mahendra Maheshwara to become a committer and we are pleased to announce
+that they have accepted.&lt;/p&gt;
+
+&lt;p&gt;Mahendra Maheshwara has joined the Libcloud community fairly recently, but
+he has already contributed multiple great patches -
+https://issues.apache.org/jira/issues/?jql=project%20%3D%20LIBCLOUD%20AND%20reporter%20in%20(%22mahendra.m%22)
+.&lt;/p&gt;
+
+&lt;p&gt;Giving him commit access will allow him to more directly contribute to the
+project.&lt;/p&gt;
+
+&lt;p&gt;Everyone, please help me welcome him to the team :)&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-dev/201212.mbox/%3CCAJMHEmLyVg66Kb1Q9LRD1z9bSbtVFU=hTZGeWO2pc+s4qcEpow@mail.gmail.com%3E&quot;&gt;mailing list thread&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
     
@@ -110,7 +457,53 @@ information, please refer to the &lt;a href=&quot;http://mail-archives.apache.or
     <author>
       <name>Tomaz Muraus</name>
     </author>
-    <content type="html">&lt;p&gt;See &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-users/201212.mbox/%3CCAJMHEmK-Y47qbqpSQjNfWxK-1efqiifvpRgE-tO8q-QLTk-EYg@mail.gmail.com%3E&quot;&gt;mailing list post&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;Dear users, developers and team members!&lt;/p&gt;
+
+&lt;p&gt;2012 is slowly coming to an end and Libcloud team wishes everyone a happy
+and successful new year 2013!&lt;/p&gt;
+
+&lt;p&gt;2012 has been another great year for us and we have surpassed 2011 in
+pretty much every aspect.&lt;/p&gt;
+
+&lt;p&gt;Here is a short list of things which have been accomplished and important
+events which have happened in 2012:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;One new committer Ilgiz Islamgulov (ilgiz) has joined the team.&lt;/li&gt;
+&lt;li&gt;We have another new commiter joining our team soon (Mahendra M).
+Currently he is undergoing a process of submitting his ICLA.&lt;/li&gt;
+&lt;li&gt;134 new JIRA issues have been opened (total of 271). Out of those 134
+issues, 111 are now marked as &amp;#39;resolved&amp;#39;.&lt;/li&gt;
+&lt;li&gt;SVN repository has had a total of 320 commit. More than 50% of those
+commits were patches from external contributors.&lt;/li&gt;
+&lt;li&gt;We had our first Google Summer of Code student which worked on a project
+named &amp;quot;Libcloud REST&amp;quot; (https://github.com/islamgulov/libcloud.rest). The
+goal of the project is to expose Libcloud functionality over HTTP.&lt;/li&gt;
+&lt;li&gt;Tomaz gave a talk titled &amp;quot;Avoiding Vendor Lock-In Using Apache Libcloud&amp;quot;
+at CloudOpen 2012 in San Diego&lt;/li&gt;
+&lt;li&gt;We now finally have some more user friendly documentation and examples on
+the website - http://libcloud.apache.org/docs/&lt;/li&gt;
+&lt;li&gt;We held a first in person meetup at the Rackspace San Francisco office in
+the beginning of the year (http://libcloudmeetup.eventbrite.com/)&lt;/li&gt;
+&lt;li&gt;We had a total of 7 releases (0.8.0, 0.9.1, 0.10.1, 0.11.0, 0.11.1,
+0.11.3, 0.11.4) and over 70.000 downloads / installs on PyPi (
+http://pypi.python.org/pypi/apache-libcloud/)&lt;/li&gt;
+&lt;li&gt;Github mirror has been starred by 266 users (
+https://github.com/apache/libcloud)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thanks again to everyone for their work and contributions and lets make
+2013 even better :)&lt;/p&gt;
+
+&lt;p&gt;I will post those numbers in a more machine readable format (JSON) in the
+next couple of weeks. This way it will be easier for us to track those
+metrics on a year over year basis.&lt;/p&gt;
+
+&lt;p&gt;Numbers retrieved on: 2012-12-25.
+Sources for those numbers: JIRA, Libcloud website, PyPi, Ohloh.net, Google
+Analytics&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-users/201212.mbox/%3CCAJMHEmK-Y47qbqpSQjNfWxK-1efqiifvpRgE-tO8q-QLTk-EYg@mail.gmail.com%3E&quot;&gt;mailing list post&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
     
@@ -122,8 +515,75 @@ information, please refer to the &lt;a href=&quot;http://mail-archives.apache.or
     <author>
       <name>Tomaz Muraus</name>
     </author>
-    <content type="html">&lt;p&gt;Libcloud 0.11.4 has been released. For more information, please refer to
-the &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-users/201211.mbox/%3CCAJMHEmL73OCjiNqg0QGPWb1Cc2JnQ4OWjXs5ah-sU%2BA%3DOwPUTg%40mail.gmail.com%3E&quot;&gt;release announcement&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;We are pleased to announce the release of Libcloud 0.11.4!&lt;/p&gt;
+
+&lt;p&gt;This release is a bug fix release and contains no new features.&lt;/p&gt;
+
+&lt;p&gt;Next release which will contain new features and some backward incompatible
+changes will happen in the 0.12.x series in the next couple of weeks.&lt;/p&gt;
+
+&lt;p&gt;Bug fixes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fix some of tests failures which happened in Python 3.3 due to randomized
+dictionary ordering.&lt;/li&gt;
+&lt;li&gt;Fix a bug where a numeric instead of a string value was used for the
+content-length header in VCloud driver.&lt;/li&gt;
+&lt;li&gt;Don&amp;#39;t ignore ex&lt;em&gt;force&lt;/em&gt;service_region argument in the CloudFiles driver.&lt;/li&gt;
+&lt;li&gt;Fix a bug which caused the connection to not be closed when using Python
+2.6 and calling get_object on an object which doesn&amp;#39;t exist in the S3
+driver.&lt;/li&gt;
+&lt;li&gt;Update &amp;#39;if type&amp;#39; checks in the update_record methods to behave correctly
+if users passes in RecordType.A with a value of 0 - if type is not None.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Full change log can be found at
+&lt;a href=&quot;https://svn.apache.org/viewvc/libcloud/tags/0.11.4/CHANGES?revision=r1411030&amp;amp;view=markup&quot;&gt;https://svn.apache.org/viewvc/libcloud/tags/0.11.4/CHANGES?revision=r1411030&amp;amp;view=markup&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;Libcloud 0.11.4 can be downloaded from
+http://libcloud.apache.org/downloads.html
+or installed using pip:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;pip install apache-libcloud
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;It is possible that the file hasn&amp;#39;t been synced to all the mirrors yet. If
+this is the case,
+please use the main Apache mirror - http://www.apache.org/dist/libcloud.&lt;/p&gt;
+
+&lt;h3&gt;Upgrading&lt;/h3&gt;
+
+&lt;p&gt;If you have installed Libcloud using pip you can also use it to upgrade it:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;pip install --upgrade apache-libcloud
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Upgrade notes&lt;/h3&gt;
+
+&lt;p&gt;A page which describes backward incompatible or semi-incompatible
+changes and how to preserve the old behavior when this is possible
+can be found at http://libcloud.apache.org/upgrade-notes.html.&lt;/p&gt;
+
+&lt;h3&gt;Documentation&lt;/h3&gt;
+
+&lt;p&gt;API documentation can be found at http://libcloud.apache.org/apidocs/0.11.4/.&lt;/p&gt;
+
+&lt;h3&gt;Bugs / Issues&lt;/h3&gt;
+
+&lt;p&gt;If you find any bug or issue, please report it on our issue tracker &amp;lt;
+https://issues.apache.org/jira/browse/LIBCLOUD&amp;gt;. Don&amp;#39;t forget to attach an
+example and / or
+test which reproduces your problem.&lt;/p&gt;
+
+&lt;h3&gt;Thanks&lt;/h3&gt;
+
+&lt;p&gt;Thanks to everyone who contributed and made this release possible! Full
+list of people who contributed to this release can be found in the CHANGES
+file &lt;a href=&quot;https://svn.apache.org/viewvc/libcloud/tags/0.11.3/CHANGES?revision=r1388947&amp;amp;view=markup&quot;&gt;https://svn.apache.org/viewvc/libcloud/tags/0.11.3/CHANGES?revision=r1388947&amp;amp;view=markup&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-users/201211.mbox/%3CCAJMHEmL73OCjiNqg0QGPWb1Cc2JnQ4OWjXs5ah-sU%2BA%3DOwPUTg%40mail.gmail.com%3E&quot;&gt;release announcement&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
     
@@ -135,8 +595,20 @@ the &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-users/201
     <author>
       <name>Tomaz Muraus</name>
     </author>
-    <content type="html">&lt;p&gt;Ilgiz Islamgulov (ilgiz) has joined our team as a committer. For more
-information, please refer to the &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-dev/201211.mbox/%3CCAJMHEmJmRDdQbfRSxOBTueSJ8u4-VgU8YaeP5LcJ2gwubfNF2g%40mail.gmail.com%3E&quot;&gt;mailing list thread&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;The Project Management Committee (PMC) for Apache Libcloud
+has asked Ilgiz Islamgulov to become a committer and we are pleased
+to announce that they have accepted.&lt;/p&gt;
+
+&lt;p&gt;Ilgiz worked on the Libcloud REST GSoC project
+(http://libcloud.apache.org/gsoc-2012.html) this summer and he has made a
+great progress on it.&lt;/p&gt;
+
+&lt;p&gt;Giving him commit access will allow him to more directly contribute to the
+project and work on integrating Libcloud REST into main line.&lt;/p&gt;
+
+&lt;p&gt;Everyone, please help me welcome him to the team :)&lt;/p&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;http://mail-archives.apache.org/mod_mbox/libcloud-dev/201211.mbox/%3CCAJMHEmJmRDdQbfRSxOBTueSJ8u4-VgU8YaeP5LcJ2gwubfNF2g%40mail.gmail.com%3E&quot;&gt;mailing list&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
     
