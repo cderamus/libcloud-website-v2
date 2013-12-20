@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apache Libcloud is a standard Python library that abstracts away differences among multiple cloud provider APIs">
+
+    
+      <meta name="description" content="Apache Libcloud is a standard Python library that abstracts away differences among multiple cloud provider APIs">
+    
+
     <meta name="author" content="The Apache Software Foundation">
 
     
@@ -15,17 +19,38 @@
       <title>Downloads | Apache Libcloud Python library</title>
     
 
-    <link href="/blog/atom.xml" type="application/atom+xml" rel="alternate" title="Apache Libcloud Blog Feed" />
-
     <!-- fav icons -->
     <link rel="shortcut icon" href="/images/favicon.png" />
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
     <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon.png" />
 
+    <link href="/blog/atom.xml" type="application/atom+xml" rel="alternate" title="Apache Libcloud Blog Feed" />
+
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 
-    <link href='/assets/global-d7453767f09c778e8f414aa1a249ba53.css' rel='stylesheet' type='text/css' />
+    <!-- Facebook OpenGraph tags -->
+    <meta content="Apache Libcloud Python Library" property="og:site_name">
+    
+      <meta content="Downloads" property="og:title">
+    
+
+    
+      <meta content="Apache Libcloud is a standard Python library that abstracts away differences among multiple cloud provider APIs" property="og:description">
+    
+
+    
+      <meta content="website" property="og:type">
+    
+
+    
+      <meta content="https://libcloud.apache.org/downloads.html" property="og:url">
+    
+    
+
+    
+
+    <link href='/assets/global-efc47dac7fae6e890d5d5caf4d04c3a5.css' rel='stylesheet' type='text/css' />
 
   </head>
 
@@ -64,7 +89,7 @@
 <p>This page contains link to the latest stable release of Libcloud. If you are
 interested in an older release, please visit the <a href="http://www.apache.org/dist/libcloud/">archive page</a>.</p>
 
-<h2>Libcloud 0.13.2 - Released on September 18th, 2013</h2>
+<p><a name="latest-release"><h2 class="anchor">Libcloud 0.13.2 - Released on September 18th, 2013</h2></a></p>
 
 <p>Files:</p>
 
@@ -80,26 +105,59 @@ interested in an older release, please visit the <a href="http://www.apache.org/
 developers KEYS</a>. You can find information on how to do that in the
 &quot;Quick package verification guide&quot; section bellow.</p>
 
-<h2>Distribution specific packages</h2>
+<p><a name="distribution-packages"><h2 class="anchor">Distribution specific packages</h2></a></p>
 
 <p>Libcloud is also available in standard repositories of many popular Linux
 distributions.</p>
 
-<ul>
-<li>Ubuntu, Debian (apt) - <code>python-libcloud</code></li>
-<li>Fedora (yum) - <code>python-libcloud</code></li>
-<li>FreeBSD (ports) - <code>ports/net/py-libcloud</code></li>
-</ul>
+<p><a name="ubuntu-debian"><h3 class="anchor">Ubuntu, Debian (apt)</h3></a></p>
+
+<p>Package name: <code>python-libcloud</code><br>
+Installation:</p>
+
+<div class="highlight"><pre><code class="bash">apt-get install python-libcloud
+</code></pre></div>
+
+<p><a name="feedora-redhat"><h3 class="anchor">Fedora, RedHat (yum)</h3></a></p>
+
+<p>Package name: <code>python-libcloud</code><br>
+Installation:</p>
+
+<div class="highlight"><pre><code class="bash">yum install python-libcloud
+</code></pre></div>
+
+<p><a name="freebsd"><h3 class="anchor">FreeBSD (ports, packages)</h3></a></p>
+
+<p>Port name: <code>ports/net/py-libcloud</code><br>
+Installation:</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> /usr/ports/net/py-libcloud
+make install clean
+</code></pre></div>
+
+<p>Package name: <code>py-libcloud</code><br>
+Installation:</p>
+
+<div class="highlight"><pre><code class="bash">pkg_add -r py27-libcloud
+</code></pre></div>
+
+<p><a name="osx"><h3 class="anchor">OS X (MacPorts)</h3></a></p>
+
+<p>Port name: <code>py-libcloud</code>
+Installation:</p>
+
+<div class="highlight"><pre><code class="bash">port installl py-libcloud
+</code></pre></div>
 
 <p>Keep in mind that distribution packages may be out of date. If you want to make
 sure that you are using the latest version, you should install it by downloading
 the archive from this page or using pip.</p>
 
-<h2>Old releases</h2>
+<p><a name="old-releases"><h2 class="anchor">Old releases</h2></a></p>
 
 <p>Old releases can be found in the archive at <a href="http://www.apache.org/dist/libcloud/">http://www.apache.org/dist/libcloud/</a>.</p>
 
-<h2>Quick package verification guide</h2>
+<p><a name="package-verification-guide"><h2 class="anchor">Quick package verification guide</h2></a></p>
 
 <p>This section contains quick instructions on how to validate the release PGP
 signatures.</p>
@@ -142,7 +200,7 @@ Primary key fingerprint: 39F6 691A 0ECF 0C50 E8BB  849C F788 75F6 4272 1F00
 
 <div class="highlight"><pre><code class="bash">gpg --verify apache-libcloud-0.13.2.tar.bz2.asc
 gpg: Signature made Wed Oct  6 15:31:35 2010 CDT using DSA key ID 42721F00
-gpg: BAD signature from <span class="s2">&quot;Paul Querna &amp;lt;...&amp;gt;&quot;</span>
+gpg: BAD signature from <span class="s2">&quot;Paul Querna &lt;...&gt;&quot;</span>
 </code></pre></div>
 
   </div>
@@ -174,7 +232,7 @@ gpg: BAD signature from <span class="s2">&quot;Paul Querna &amp;lt;...&amp;gt;&q
     </div><!-- /.container -->
 
     <!-- JavaScript -->
-    <script src='/assets/global-736c88c2fd20e0eabbae6c2de8ef9e8c.js' type='text/javascript'></script>
+    <script src='/assets/global-87c3c18cc5eb61bdd337210fe3415a4c.js' type='text/javascript'></script>
 
 
     <script type="text/javascript">
