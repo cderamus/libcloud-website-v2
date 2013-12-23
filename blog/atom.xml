@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Apache Libcloud Python Library</title>
-  <subtitle>Standard Python library that abstracts away differences among multiple cloud provider APIs</subtitle>
+  <title>Apache Libcloud</title>
+  <subtitle>Python library that abstracts away differences among multiple cloud provider APIs</subtitle>
   <link href="https://libcloud.apache.org" rel="self" />
   <link href="https://libcloud.apache.org" />
   <id>https://libcloud.apache.org</id>
-  <updated>2013-12-19T23:58:30+01:00</updated>
+  <updated>2013-12-23T19:01:40+01:00</updated>
   <author>
     <name>The Apache Software Foundation</name>
   </author>
